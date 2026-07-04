@@ -11,8 +11,11 @@ export default function Hero() {
         <div className="hero-line">
           <span className="hero-letter-sweep">PIYUSH</span>
         </div>
+
         <div className="hero-line">
-          <span className="hero-letter-sweep hero-letter-sweep-delay">PANBUDE</span>
+          <span className="hero-letter-sweep hero-letter-sweep-delay">
+            PANBUDE
+          </span>
         </div>
       </div>
 
@@ -20,10 +23,14 @@ export default function Hero() {
         className="hero-subtitle"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 2.2 }}
+        transition={{
+          duration: 0.8,
+          ease: [0.16, 1, 0.3, 1],
+          delay: 2.2,
+        }}
       >
         <TextReveal delay={2.2} as="span">
-          Digital Guy
+          Building digital experiences.
         </TextReveal>
       </motion.div>
 
@@ -34,7 +41,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 2.8 }}
       >
         <div className="hero-scroll-line" />
-        <span>scroll</span>
+        <span>SCROLL</span>
       </motion.div>
     </section>
   );
