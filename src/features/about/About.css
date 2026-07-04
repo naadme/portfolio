@@ -1,12 +1,12 @@
 .about {
-  padding: 160px 48px 120px;
+  padding: 120px 48px 80px;
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
 .about-greeting {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .about-heading {
@@ -20,7 +20,7 @@
 
 .about-description {
   max-width: 680px;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -38,8 +38,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  padding: 4rem 0;
-  margin-bottom: 4rem;
+  padding: 2.5rem 0;
+  margin-bottom: 2.5rem;
   position: relative;
   border-top: 1px solid var(--color-border);
 }
@@ -79,7 +79,7 @@
   display: flex;
   align-items: flex-start;
   gap: 4rem;
-  padding: 4rem 0;
+  padding: 2.5rem 0;
   border-top: 1px solid var(--color-border);
 }
 
@@ -87,7 +87,7 @@
   display: flex;
   align-items: flex-start;
   gap: 4rem;
-  padding: 4rem 0;
+  padding: 2.5rem 0;
   border-top: 1px solid var(--color-border);
 }
 
@@ -95,7 +95,7 @@
   display: flex;
   align-items: flex-start;
   gap: 4rem;
-  padding: 4rem 0;
+  padding: 2.5rem 0;
   border-top: 1px solid var(--color-border);
 }
 
@@ -184,17 +184,17 @@
 
 @media (max-width: 810px) {
   .about {
-    padding: 100px 24px 80px;
+    padding: 80px 24px 60px;
   }
 
   .about-description {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .about-stats {
     grid-template-columns: repeat(2, 1fr);
-    padding: 3rem 0;
-    margin-bottom: 3rem;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
   }
 
   .about-education,
@@ -202,7 +202,7 @@
   .about-skills {
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2.5rem 0;
+    padding: 2rem 0;
   }
 
   .about-entries {

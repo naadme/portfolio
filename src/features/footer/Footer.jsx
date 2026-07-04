@@ -22,7 +22,7 @@ export default function Footer() {
     <footer className="footer" ref={ref}>
       <div className="footer-inner">
         <div className="footer-left">
-          <MagneticButton href="https://github.com/piyush-4" target="_blank" rel="noreferrer">
+          <MagneticButton href="https://github.com/naadme" target="_blank" rel="noopener noreferrer">
             <motion.span
               className="footer-social"
               custom={0}
@@ -33,7 +33,7 @@ export default function Footer() {
               GITHUB
             </motion.span>
           </MagneticButton>
-          <MagneticButton href="https://linkedin.com/in/pyp04" target="_blank" rel="noreferrer">
+          <MagneticButton href="https://www.linkedin.com/in/piyush-panbude" target="_blank" rel="noopener noreferrer">
             <motion.span
               className="footer-social"
               custom={1}
@@ -53,7 +53,15 @@ export default function Footer() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease, delay: 0.3 }}
           >
-            Do you like<br />What you see?
+            Let&apos;s Build<br />Something Great.
+          </motion.p>
+          <motion.p
+            className="footer-subtitle"
+            initial={{ opacity: 0, y: 15 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, ease, delay: 0.45 }}
+          >
+            Available for freelance projects.
           </motion.p>
         </div>
       </div>
@@ -65,7 +73,7 @@ export default function Footer() {
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          2025 &copy; PIYUSH PANBUDE
+          © 2026 Piyush Panbude. All Rights Reserved.
         </motion.span>
       </div>
     </footer>

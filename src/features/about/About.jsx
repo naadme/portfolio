@@ -16,30 +16,30 @@ const entryVariants = {
 };
 
 const education = [
-  { period: '2025 - 2029', name: 'NMIMS University', detail: 'B.Sc. Data Science' },
-  { period: '2023 - 2025', name: 'Dahanukar College', detail: 'Commerce' },
+  { period: '2025 – Present', name: 'NMIMS University', detail: 'B.Sc. Data Science' },
+  { period: '2023 – 2025', name: 'Dahanukar College', detail: 'Commerce' },
 ];
 
 const experiences = [
-  { period: '2023 - 2025', name: 'Social Media Head', detail: 'Dahanukar College' },
-  { period: '2020 - 2023', name: 'Student Relation Head', detail: 'Yashodham High School' },
+  { period: '2025 – Present', name: 'Independent Web Developer', detail: 'Designing and developing premium custom websites for startups, businesses and brands.' },
+  { period: '2025', name: 'Graphic Designer', detail: 'SeeAdler Media' },
 ];
 
 const stats = [
-  { value: 2, suffix: '+', label: 'Roles Held' },
-  { value: 5, suffix: '+', label: 'Skills' },
-  { value: 3, suffix: '', label: 'Languages' },
-  { value: 4, suffix: '', label: 'Interests' },
+  { value: 4, suffix: '+', label: 'Projects Built' },
+  { value: 2, suffix: '', label: 'Client Projects' },
+  { value: 10, suffix: '+', label: 'Technologies' },
+  { value: 100, suffix: '%', label: 'Custom Built' },
 ];
 
-const skills = [
-  'Project Management', 'Public Relations', 'Social Media Management',
-  'Teamwork', 'Market Visibility', 'Effective Communication',
-  'Template Making', 'Photo & Video Editing',
+const techStack = [
+  'React', 'Next.js', 'TypeScript', 'JavaScript', 'Node.js', 'Express',
+  'MongoDB', 'Firebase', 'Framer Motion', 'GSAP', 'Tailwind CSS',
+  'HTML5', 'CSS3', 'Git', 'GitHub', 'Figma', 'Responsive Design',
 ];
 
-const languages = ['English (Fluent)', 'Marathi (Fluent)', 'Hindi (Fluent)', 'German (Basics)'];
-const interests = ['UI/UX Explorations', 'Trend Spotting', 'Template Making', 'Graphical Designing'];
+const languages = ['English (Professional)', 'Hindi (Native)', 'Marathi (Native)'];
+const interests = ['AI Development', 'Creative Coding', 'Motion Design', 'UI Engineering', 'Design Systems'];
 
 function SkillTags({ items, delayBase }) {
   const ref = useRef(null);
@@ -95,21 +95,7 @@ export default function About() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease, delay: 0.2 }}
         >
-          Digital marketing specialist with a proven track record at Dahanukar College, specialising in social media management and event management.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, ease, delay: 0.3 }}
-        >
-          Enhanced market visibility through engaging content and responsive community interaction, significantly boosting event awareness.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, ease, delay: 0.4 }}
-        >
-          Proficient in photo editing, with strong collaboration skills which result in impactful increase in followers. Recommended by HODs to committee heads.
+          I design and develop modern, high-performance websites that combine exceptional aesthetics with seamless user experience. I build custom digital experiences for startups, businesses and personal brands with a strong focus on quality, performance and clean engineering.
         </motion.p>
       </div>
 
@@ -187,8 +173,8 @@ export default function About() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease, delay: 0.45 }}
       >
-        <span className="about-label">Skills</span>
-        <SkillTags items={skills} delayBase={0.5} />
+        <span className="about-label">Tech Stack</span>
+        <SkillTags items={techStack} delayBase={0.5} />
       </motion.div>
 
       <motion.div
@@ -207,7 +193,7 @@ export default function About() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease, delay: 0.55 }}
       >
-        <span className="about-label">Interests</span>
+        <span className="about-label">Currently Exploring</span>
         <SkillTags items={interests} delayBase={0.6} />
       </motion.div>
     </section>

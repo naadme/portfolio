@@ -21,7 +21,7 @@ export default function Navbar() {
           <a href="#contact" className="navbar-link">RESUME</a>
         </div>
 
-        <span className="navbar-year">&copy;2025</span>
+        <span className="navbar-year">&copy;2026</span>
 
         <button
           className={`navbar-burger ${menuOpen ? 'navbar-burger--open' : ''}`}
@@ -37,7 +37,7 @@ export default function Navbar() {
         <a href="#about" className="navbar-mobile-link" onClick={() => setMenuOpen(false)}>ABOUT</a>
         <a href="#contact" className="navbar-mobile-link" onClick={() => setMenuOpen(false)}>CONTACT</a>
         <a href="#contact" className="navbar-mobile-link" onClick={() => setMenuOpen(false)}>resume</a>
-        <span className="navbar-mobile-year">&copy;2025</span>
+        <span className="navbar-mobile-year">&copy;2026</span>
       </div>
     </motion.nav>
   );
