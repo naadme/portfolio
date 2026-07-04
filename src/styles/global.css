@@ -1,0 +1,76 @@
+:root {
+  --color-bg: #000000;
+  --color-text: #fff;
+  --color-text-dim: rgba(255, 255, 255, 0.5);
+  --color-border: rgba(255, 255, 255, 0.1);
+
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Switzer', 'Inter', -apple-system, sans-serif;
+  --font-label: 'Inter', -apple-system, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: initial;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::selection {
+  background: #fff;
+  color: var(--color-bg);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+html.lenis { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+@media (min-width: 811px) and (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+
+  main {
+    contain: layout style;
+  }
+
+  section {
+    contain: layout style;
+  }
+
+  img {
+    content-visibility: auto;
+  }
+}

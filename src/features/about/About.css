@@ -1,0 +1,225 @@
+.about {
+  padding: 160px 48px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.about-greeting {
+  margin-bottom: 3rem;
+}
+
+.about-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  color: var(--color-text);
+}
+
+.about-description {
+  max-width: 680px;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-description p {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: 300;
+  color: var(--color-text-dim);
+  line-height: 1.7;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+  position: relative;
+  border-top: 1px solid var(--color-border);
+}
+
+.about-stats-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  background: var(--color-text);
+}
+
+.about-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.about-stat-number {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+}
+
+.about-stat-label {
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-dim);
+}
+
+.about-education {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 4rem 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.about-experience {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 4rem 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.about-skills {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 4rem 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.about-label {
+  font-family: var(--font-label);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-dim);
+  flex-shrink: 0;
+  min-width: 120px;
+}
+
+.about-entries {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 140px;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.about-entry:hover {
+  border-color: var(--color-border);
+  background: rgba(255, 255, 255, 0.03);
+  transform: translateY(-4px);
+}
+
+.about-period {
+  font-family: var(--font-label);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.about-name {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.about-detail {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--color-text-dim);
+}
+
+.about-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.about-skill-tag {
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.375rem 0.875rem;
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  color: var(--color-text-dim);
+  transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.about-skill-tag:hover {
+  border-color: var(--color-text-dim);
+  color: var(--color-text);
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 810px) {
+  .about {
+    padding: 100px 24px 80px;
+  }
+
+  .about-description {
+    margin-bottom: 3rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .about-education,
+  .about-experience,
+  .about-skills {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem 0;
+  }
+
+  .about-entries {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about-entry:hover {
+    transform: none;
+    border-color: transparent;
+    background: transparent;
+  }
+
+  .about-skill-tag:hover {
+    transform: none;
+    border-color: var(--color-border);
+    color: var(--color-text-dim);
+    background: transparent;
+  }
+}
