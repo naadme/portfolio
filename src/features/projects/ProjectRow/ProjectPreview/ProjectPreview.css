@@ -1,8 +1,0 @@
-.project-preview {
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: clamp(30px, 4vw, 80px);
-}

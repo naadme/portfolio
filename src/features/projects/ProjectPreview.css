@@ -1,0 +1,44 @@
+.project-preview {
+  position: relative;
+  width: 100%;
+  padding-bottom: 60px;
+  padding-top: 20px;
+  filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.55));
+}
+
+.project-preview__mac {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.project-preview__phone {
+  position: absolute;
+  bottom: 14%;
+  width: 15%;
+  min-width: 96px;
+  max-width: 150px;
+  z-index: 2;
+}
+
+.project-preview__phone--left {
+  left: -6%;
+}
+
+.project-preview__phone--right {
+  right: -6%;
+}
+
+@media (max-width: 1024px) {
+  .project-preview {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-preview__phone {
+    width: 20%;
+    min-width: 72px;
+  }
+}
