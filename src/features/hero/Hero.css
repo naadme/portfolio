@@ -11,10 +11,7 @@
 
 .hero-gradient {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: radial-gradient(
     ellipse 80% 50% at 50% 50%,
     rgba(255, 217, 142, 0.03) 0%,
@@ -30,7 +27,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0;
 }
 
 .hero-line {
@@ -45,78 +41,119 @@
   font-weight: 900;
   letter-spacing: -0.04em;
   line-height: 0.9;
-  text-align: center;
   text-transform: uppercase;
   background: linear-gradient(
     90deg,
     #fff 0%,
     #fff 45%,
-    rgba(255,255,255,0.06) 50%,
-    rgba(255,255,255,0.06) 100%
+    rgba(255,255,255,.06) 50%,
+    rgba(255,255,255,.06) 100%
   );
   background-size: 200% 100%;
+  background-position: -100% 0;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: heroSweep 2s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
-  background-position: -100% 0;
-  will-change: background-position, -webkit-text-fill-color;
-  backface-visibility: hidden;
+  animation: heroSweep 2s cubic-bezier(.22,1,.36,1) .2s forwards;
 }
 
-.hero-letter-sweep-delay {
-  animation-delay: 0.4s;
+.hero-letter-sweep-delay{
+  animation-delay:.4s;
 }
 
-@keyframes heroSweep {
-  0% { background-position: -100% 0; }
-  70% { background-position: 100% 0; }
-  100% { background-position: 100% 0; background: none; -webkit-text-fill-color: #fff; color: #fff; }
+@keyframes heroSweep{
+  0%{background-position:-100% 0;}
+  70%{background-position:100% 0;}
+  100%{
+    background:none;
+    -webkit-text-fill-color:#fff;
+    color:#fff;
+  }
 }
 
-.hero-subtitle {
-  position: relative;
-  z-index: 1;
-  margin-top: 2rem;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 300;
-  color: var(--color-text-dim);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+.hero-subtitle{
+  position:relative;
+  z-index:1;
+  margin-top:2rem;
+  font-family:var(--font-body);
+  font-size:1rem;
+  font-weight:300;
+  color:var(--color-text-dim);
+  letter-spacing:.08em;
+  text-transform:uppercase;
 }
 
-.hero-scroll-hint {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-  z-index: 1;
+.hero-actions{
+  margin-top:2.5rem;
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  justify-content:center;
+  z-index:2;
 }
 
-.hero-scroll-line {
-  width: 1px;
-  height: 40px;
-  background: linear-gradient(to bottom, transparent, var(--color-text-dim));
-  animation: scrollPulse 2s ease-in-out infinite;
-  will-change: opacity, transform;
-  backface-visibility: hidden;
+.hero-btn{
+  padding:.95rem 1.8rem;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.12);
+  background:transparent;
+  color:#fff;
+  text-decoration:none;
+  font-size:.82rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  transition:all .35s cubic-bezier(.22,1,.36,1);
+  backdrop-filter:blur(12px);
 }
 
-.hero-scroll-hint span {
-  font-family: var(--font-label);
-  font-size: 0.625rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--color-text-dim);
+.hero-btn:hover{
+  transform:translateY(-3px);
+  border-color:#fff;
 }
 
-@keyframes scrollPulse {
-  0%, 100% { opacity: 0.3; transform: scaleY(0.6); }
-  50% { opacity: 1; transform: scaleY(1); }
+.hero-btn.primary{
+  background:#fff;
+  color:#000;
+}
+
+.hero-btn.primary:hover{
+  background:#f2f2f2;
+}
+
+.hero-scroll-hint{
+  position:absolute;
+  bottom:2rem;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.75rem;
+  z-index:1;
+}
+
+.hero-scroll-line{
+  width:1px;
+  height:40px;
+  background:linear-gradient(to bottom,transparent,var(--color-text-dim));
+  animation:scrollPulse 2s ease infinite;
+}
+
+.hero-scroll-hint span{
+  font-family:var(--font-label);
+  font-size:.625rem;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--color-text-dim);
+}
+
+@keyframes scrollPulse{
+  0%,100%{
+    opacity:.3;
+    transform:scaleY(.6);
+  }
+  50%{
+    opacity:1;
+    transform:scaleY(1);
+  }
 }

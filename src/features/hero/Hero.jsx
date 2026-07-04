@@ -35,10 +35,31 @@ export default function Hero() {
       </motion.div>
 
       <motion.div
+        className="hero-actions"
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.8,
+          delay: 2.5,
+        }}
+      >
+        <a href="#projects" className="hero-btn primary">
+          View Projects
+        </a>
+
+        <a href="#contact" className="hero-btn">
+          Let's Talk
+        </a>
+      </motion.div>
+
+      <motion.div
         className="hero-scroll-hint"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 2.8 }}
+        transition={{
+          duration: 0.8,
+          delay: 3,
+        }}
       >
         <div className="hero-scroll-line" />
         <span>SCROLL</span>
