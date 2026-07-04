@@ -47,7 +47,7 @@ export default function Cursor() {
     };
 
     const handleMouseOver = (e) => {
-      const target = e.target.closest('a, button, [role="button"], input, textarea, select, label, img');
+      const target = e.target.closest('[data-cursor="pointer"]');
       if (target) {
         dot.classList.add('cursor-dot--hidden');
         ring.classList.add('cursor-ring--hover');
@@ -55,7 +55,7 @@ export default function Cursor() {
     };
 
     const handleMouseOut = (e) => {
-      const target = e.target.closest('a, button, [role="button"], input, textarea, select, label, img');
+      const target = e.target.closest('[data-cursor="pointer"]');
       if (target) {
         dot.classList.remove('cursor-dot--hidden');
         ring.classList.remove('cursor-ring--hover');

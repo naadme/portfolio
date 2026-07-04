@@ -22,7 +22,7 @@ export default function Footer() {
     <footer className="footer" ref={ref}>
       <div className="footer-inner">
         <div className="footer-left">
-          <MagneticButton href="https://github.com/naadme" target="_blank" rel="noopener noreferrer">
+          <MagneticButton href="https://github.com/naadme" target="_blank" rel="noopener noreferrer" data-cursor="pointer">
             <motion.span
               className="footer-social"
               custom={0}
@@ -33,7 +33,7 @@ export default function Footer() {
               GITHUB
             </motion.span>
           </MagneticButton>
-          <MagneticButton href="https://www.linkedin.com/in/piyush-panbude" target="_blank" rel="noopener noreferrer">
+          <MagneticButton href="https://www.linkedin.com/in/piyush-panbude" target="_blank" rel="noopener noreferrer" data-cursor="pointer">
             <motion.span
               className="footer-social"
               custom={1}

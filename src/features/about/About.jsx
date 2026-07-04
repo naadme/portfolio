@@ -22,7 +22,7 @@ const education = [
 
 const experiences = [
   { period: '2025 – Present', name: 'Independent Web Developer', detail: 'Designing and developing premium custom websites for startups, businesses and brands.' },
-  { period: '2025', name: 'Graphic Designer', detail: 'SeeAdler Media' },
+  { period: '2025', name: 'Graphic Designer', detail: 'Seeadler Media' },
 ];
 
 const stats = [

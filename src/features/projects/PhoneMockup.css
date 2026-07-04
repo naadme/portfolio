@@ -3,6 +3,7 @@
   width: 100%;
   aspect-ratio: 9 / 18.3;
   margin: 0 auto;
+  cursor: default;
 }
 
 .phone__frame {

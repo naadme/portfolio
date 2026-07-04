@@ -4,6 +4,7 @@
   align-items: center;
   gap: 80px;
   width: 100%;
+  cursor: default;
 }
 
 .project-row--reversed {

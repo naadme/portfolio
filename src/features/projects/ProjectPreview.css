@@ -4,6 +4,7 @@
   padding-bottom: 60px;
   padding-top: 20px;
   filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.55));
+  cursor: default;
 }
 
 .project-preview__mac {

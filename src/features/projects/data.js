@@ -7,7 +7,7 @@ const projects = [
     description:
       "A modern dental clinic website focused on building trust through clean design, online appointment booking, treatment information, and a seamless mobile experience.",
     tech: ["React", "Vite", "Framer Motion"],
-    status: "Live",
+    status: "awaiting client approval",
     desktopImage: "/projects/Screenshot 2026-07-04 at 6.54.46\u202FPM.png",
     mobileImage: "/projects/Screenshot 2026-07-04 at 6.55.13\u202FPM.png",
   },
@@ -31,7 +31,7 @@ const projects = [
     description:
       "A complete business website for a courier company featuring shipment tracking, service information, responsive design, and a professional online presence.",
     tech: ["React", "Vite", "Framer Motion"],
-    status: "Live",
+    status: "awaiting client approval",
     desktopImage: "/projects/Screenshot 2026-07-04 at 6.54.05\u202FPM.png",
     mobileImage: "/projects/Screenshot 2026-07-04 at 6.52.23\u202FPM.png",
   },

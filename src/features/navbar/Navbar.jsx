@@ -16,9 +16,9 @@ export default function Navbar() {
         <a href="#hero" className="navbar-logo">PIYUSH PANBUDE</a>
 
         <div className="navbar-center">
-          <a href="#about" className="navbar-link">ABOUT</a>
-          <a href="#contact" className="navbar-link">CONTACT</a>
-          <a href="#contact" className="navbar-link">RESUME</a>
+          <a href="#about" className="navbar-link" data-cursor="pointer">ABOUT</a>
+          <a href="#contact" className="navbar-link" data-cursor="pointer">CONTACT</a>
+          <a href="/resume.pdf" className="navbar-link" data-cursor="pointer" target="_blank" rel="noopener noreferrer">RESUME</a>
         </div>
 
         <span className="navbar-year">&copy;2026</span>
@@ -34,9 +34,9 @@ export default function Navbar() {
       </div>
 
       <div className={`navbar-mobile ${menuOpen ? 'navbar-mobile--open' : ''}`}>
-        <a href="#about" className="navbar-mobile-link" onClick={() => setMenuOpen(false)}>ABOUT</a>
-        <a href="#contact" className="navbar-mobile-link" onClick={() => setMenuOpen(false)}>CONTACT</a>
-        <a href="#contact" className="navbar-mobile-link" onClick={() => setMenuOpen(false)}>resume</a>
+        <a href="#about" className="navbar-mobile-link" data-cursor="pointer" onClick={() => setMenuOpen(false)}>ABOUT</a>
+        <a href="#contact" className="navbar-mobile-link" data-cursor="pointer" onClick={() => setMenuOpen(false)}>CONTACT</a>
+        <a href="/resume.pdf" className="navbar-mobile-link" data-cursor="pointer" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>resume</a>
         <span className="navbar-mobile-year">&copy;2026</span>
       </div>
     </motion.nav>

@@ -43,11 +43,11 @@ export default function Hero() {
           delay: 2.5,
         }}
       >
-        <a href="#projects" className="hero-btn primary">
+        <a href="#projects" className="hero-btn primary" data-cursor="pointer">
           View Projects
         </a>
 
-        <a href="#contact" className="hero-btn">
+        <a href="#contact" className="hero-btn" data-cursor="pointer">
           Let's Talk
         </a>
       </motion.div>
