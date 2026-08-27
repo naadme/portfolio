@@ -32,6 +32,7 @@ const projects = [
       "A complete business website for a courier company featuring shipment tracking, service information, responsive design, and a professional online presence.",
     tech: ["React", "Vite", "Framer Motion"],
     status: "awaiting client approval",
+    website: "https://hindustancourier.com",
     desktopImage: "/projects/Screenshot 2026-07-04 at 6.54.05\u202FPM.png",
     mobileImage: "/projects/Screenshot 2026-07-04 at 6.52.23\u202FPM.png",
   },

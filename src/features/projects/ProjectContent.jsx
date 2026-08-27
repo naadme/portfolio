@@ -2,7 +2,8 @@ import React from "react";
 import "./ProjectContent.css";
 
 const ProjectContent = ({ project }) => {
-  const { number, category, title, description, tech, status } = project;
+  const { number, category, title, description, tech, status, website } =
+    project;
 
   return (
     <div className="project-content">
@@ -22,10 +23,24 @@ const ProjectContent = ({ project }) => {
         ))}
       </div>
 
-      <div className="project-content__status">
-        <span className="project-content__status-dot" />
-        <span className="project-content__status-label">{status}</span>
-      </div>
+      {website ? (
+        <a
+          className="project-content__status project-content__status--visit"
+          href={website}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="project-content__visit-label">Visit Website</span>
+          <span className="project-content__visit-arrow" aria-hidden="true">
+            ↗
+          </span>
+        </a>
+      ) : (
+        <div className="project-content__status">
+          <span className="project-content__status-dot" />
+          <span className="project-content__status-label">{status}</span>
+        </div>
+      )}
     </div>
   );
 };
