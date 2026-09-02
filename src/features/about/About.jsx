@@ -21,14 +21,14 @@ const education = [
 ];
 
 const experiences = [
-  { period: '2025 – Present', name: 'Independent Web Developer', detail: 'Designing and developing premium custom websites for startups, businesses and brands.' },
+  { period: '2025 – Present', name: 'Freelance Web Developer', detail: 'Building modern websites and web applications for businesses, startups, creators, and personal brands.' },
   { period: '2025', name: 'Graphic Designer', detail: 'Seeadler Media' },
 ];
 
 const stats = [
-  { value: 4, suffix: '+', label: 'Projects Built' },
-  { value: 2, suffix: '', label: 'Client Projects' },
-  { value: 10, suffix: '+', label: 'Technologies' },
+  { value: 6, suffix: '+', label: 'Projects Built' },
+  { value: 3, suffix: '', label: 'Client Projects' },
+  { value: 17, suffix: '+', label: 'Technologies Used' },
   { value: 100, suffix: '%', label: 'Custom Built' },
 ];
 
@@ -173,7 +173,7 @@ export default function About() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease, delay: 0.45 }}
       >
-        <span className="about-label">Tech Stack</span>
+        <span className="about-label">Technologies I've Used</span>
         <SkillTags items={techStack} delayBase={0.5} />
       </motion.div>
 

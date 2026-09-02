@@ -30,7 +30,7 @@ export default function Hero() {
         }}
       >
         <TextReveal delay={2.2} as="span">
-          Building digital experiences.
+          Building websites for businesses, startups & creators.
         </TextReveal>
       </motion.div>
 

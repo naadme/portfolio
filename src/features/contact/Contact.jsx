@@ -18,8 +18,16 @@ export default function Contact() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease }}
         >
-          <TextReveal>Let&apos;s talk</TextReveal>
+          <TextReveal>Let&apos;s work together</TextReveal>
         </motion.h2>
+        <motion.p
+          className="contact-location"
+          initial={{ opacity: 0, y: 15 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, ease, delay: 0.15 }}
+        >
+          Business websites, landing pages, portfolios & web apps
+        </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
