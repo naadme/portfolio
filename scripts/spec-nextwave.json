@@ -1,0 +1,13 @@
+{
+  "base": "http://localhost:5199",
+  "out": "public/projects/nextwave",
+  "shots": [
+    { "name": "home-desktop", "url": "/", "viewport": [1440, 900], "dsf": 2 },
+    { "name": "home-work", "url": "/", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.17 },
+    { "name": "home-process", "url": "/", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.64 },
+    { "name": "services-page", "url": "/services", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.15 },
+    { "name": "contact-page", "url": "/contact", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.18 },
+    { "name": "home-mobile", "url": "/", "viewport": [396, 836], "dsf": 2 },
+    { "name": "menu-mobile", "url": "/", "viewport": [396, 836], "dsf": 2, "click": ["header button[aria-expanded]"], "sweep": false }
+  ]
+}

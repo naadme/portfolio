@@ -1,0 +1,35 @@
+/* Page progress */
+.progress{position:fixed;inset:0 0 auto;height:2px;z-index:40;pointer-events:none}
+.progress span{display:block;height:100%;background:var(--accent);transform-origin:0 50%;transform:scaleX(var(--p))}
+/* Hero lines slide up from a mask */
+.mask{display:block;overflow:hidden;padding-bottom:.1em;margin-bottom:-.1em}
+.rise-mask{display:block;transform:translateY(112%);animation:maskup 1.3s var(--ease) var(--d,0ms) forwards}@keyframes maskup{to{transform:none}}
+/* Device tilt, sheen and case-study hint (mouse and trackpad only) */
+.tilt{position:relative;width:min(100%,calc(66svh*1.6));cursor:pointer;transform-style:preserve-3d;transform:perspective(1100px) rotateX(calc(var(--ry,0)*-4deg)) rotateY(calc(var(--rx,0)*5deg));transition:transform .8s var(--ease)}
+.sheen{position:absolute;inset:0;border-radius:18px;pointer-events:none;mix-blend-mode:soft-light;opacity:calc(var(--hover,0)*.9);transition:opacity .5s var(--ease);background:radial-gradient(520px circle at calc(var(--mx,.5)*100%) calc(var(--my,.5)*100%),rgba(255,255,255,.28),transparent 60%)}
+.peek{position:absolute;left:50%;top:50%;padding:12px 20px;border-radius:999px;font-size:14px;font-weight:500;white-space:nowrap;pointer-events:none;color:var(--fg);background:var(--glass-strong);opacity:0;transform:translate(-50%,-44%) scale(.94);transition:opacity .35s var(--ease),transform .5s var(--ease)}
+.tilt:hover .peek{opacity:1;transform:translate(-50%,-50%) scale(1)}
+@media(hover:none){.peek,.sheen{display:none}}
+/* Magnetic buttons */
+[data-magnetic]{transform:translate3d(var(--tx,0),var(--ty,0),0)}
+.visit[data-magnetic]{transition:transform .45s var(--ease),box-shadow .25s,filter .25s}.visit[data-magnetic]:active{transform:translate3d(var(--tx,0),var(--ty,0),0) scale(.97)}
+.btn.primary[data-magnetic]{transition:transform .45s var(--ease),opacity .25s}.btn.primary[data-magnetic]:active{transform:translate3d(var(--tx,0),var(--ty,0),0) scale(.97)}
+/* Project switcher */
+.pindex{position:fixed;left:50%;bottom:20px;z-index:25;display:flex;gap:2px;padding:6px;border-radius:999px;transform:translate(-50%,18px);opacity:0;visibility:hidden;transition:opacity .45s var(--ease),transform .6s var(--ease),visibility .45s}
+.pindex.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.pindex a{display:flex;align-items:center;gap:10px;min-height:40px;padding:0 14px;border-radius:999px;font-size:14px;font-weight:600;color:var(--mute);transition:background .35s,color .35s}
+.pindex a:hover{color:var(--fg)}.pindex a[aria-current=true]{background:var(--fg);color:var(--bg)}
+.pindex .nm{display:none;font-weight:500;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(min-width:700px){.pindex a[aria-current=true] .nm{display:inline}}
+/* Scroll-linked row */
+.slide{overflow:hidden;margin-top:20px;padding:8px 0 4px}
+.slide-track{display:flex;width:max-content;transform:translate3d(calc(var(--p)*-33.333%),0,0);will-change:transform;font-size:clamp(34px,5.6vw,84px);font-weight:600;letter-spacing:-.05em;line-height:1.05;white-space:nowrap}
+.slide-track li{margin-right:clamp(32px,4.5vw,72px)}.slide-track li::after{content:'';display:inline-block;width:.14em;height:.14em;border-radius:50%;background:var(--accent);margin-left:clamp(32px,4.5vw,72px);vertical-align:.28em}
+/* Contact extras and case-study project navigation */
+.c-actions{margin-top:20px}.contact .btn{color:var(--inv-fg);border-color:color-mix(in srgb,var(--inv-fg) 30%,transparent)}.contact .btn:hover{border-color:var(--inv-fg)}
+.case-nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.case-nav .btn{flex-direction:column;align-items:flex-start;gap:6px;padding:18px 22px;border-radius:20px;text-align:left;min-height:0}
+.case-nav .btn span{font-size:13px;color:var(--mute)}.case-nav .btn b{font-size:16px;font-weight:600;letter-spacing:-.02em;line-height:1.2}.case-nav .next{align-items:flex-end;text-align:right}
+/* Circular theme reveal */
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
+::view-transition-old(root){z-index:1}::view-transition-new(root){z-index:2}

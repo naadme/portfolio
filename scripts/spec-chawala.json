@@ -1,0 +1,14 @@
+{
+  "base": "http://localhost:8090",
+  "out": "public/projects/chawala-dental-clinic",
+  "shots": [
+    { "name": "home-desktop", "url": "/", "viewport": [1440, 900], "dsf": 2 },
+    { "name": "home-services", "url": "/", "viewport": [1440, 900], "dsf": 2, "scroll": "#services" },
+    { "name": "home-team", "url": "/", "viewport": [1440, 900], "dsf": 2, "scroll": "#team" },
+    { "name": "home-faq", "url": "/", "viewport": [1440, 900], "dsf": 2, "scroll": ".faq-section" },
+    { "name": "home-cta", "url": "/", "viewport": [1440, 900], "dsf": 2, "scroll": ".cta" },
+    { "name": "home-footer", "url": "/", "viewport": [1440, 900], "dsf": 2, "scroll": "#contact" },
+    { "name": "health-tips", "url": "/health-tips.html", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.2 },
+    { "name": "home-mobile", "url": "/", "viewport": [396, 836], "dsf": 2 }
+  ]
+}

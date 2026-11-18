@@ -1,0 +1,10 @@
+/* Entrance, word reveal, and smooth theme switching. */
+.rise{opacity:0;transform:translateY(28px);animation:rise 1.1s var(--ease) var(--d,0ms) forwards}@keyframes rise{to{opacity:1;transform:none}}
+.w{--u:clamp(0,calc((var(--p) - var(--s))*9),1);opacity:calc(.16 + .84*var(--u)*var(--u)*(3 - 2*var(--u)))}
+.theming *,.theming *::before,.theming *::after{transition:background-color .5s var(--ease),border-color .5s var(--ease),color .5s var(--ease),fill .5s var(--ease),box-shadow .5s var(--ease)!important}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}[data-sp]{--p:1!important}
+*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+.rise{opacity:1;transform:none}.pj{height:auto}.pj-stick{position:static;height:auto;opacity:1;transform:none}.hero{height:auto}.hero-in{position:relative;height:100svh;opacity:1;transform:none}
+}
+@media(prefers-reduced-motion:reduce){.rise-mask{transform:none}.tilt{transform:none!important}.progress{display:none}.slide-track{transform:none}.frame img{opacity:1}}

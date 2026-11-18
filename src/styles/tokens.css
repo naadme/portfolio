@@ -1,0 +1,7 @@
+/* One typeface for the whole site. Change --font here and everything follows. */
+:root{--font:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+--bg:#fbfaf8;--surface:#f0eeea;--fg:#1d1d1f;--mute:#6b6a68;--line:#dedad4;--accent:#0a66d6;--inv-bg:#1d1d1f;--inv-fg:#fbfaf8;
+--glass:rgba(255,255,255,.58);--glass-strong:rgba(255,255,255,.82);--glass-edge:rgba(255,255,255,.7);--glass-shadow:0 8px 30px -14px rgba(0,0,0,.22);
+--ease:cubic-bezier(.22,.7,.2,1);--pad:clamp(20px,5vw,72px);--max:1400px}
+[data-theme=dark]{--bg:#0e0e10;--surface:#17171a;--fg:#f3f2ef;--mute:#9a9893;--line:#2a2a2e;--accent:#4d9bff;--inv-bg:#f3f2ef;--inv-fg:#0e0e10;
+--glass:rgba(38,38,44,.55);--glass-strong:rgba(28,28,32,.84);--glass-edge:rgba(255,255,255,.13);--glass-shadow:0 8px 30px -14px rgba(0,0,0,.7)}

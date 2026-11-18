@@ -1,0 +1,14 @@
+{
+  "base": "https://hindustancourier.com",
+  "out": "public/projects/hindustan-courier",
+  "shots": [
+    { "name": "home-desktop", "url": "/", "viewport": [1440, 900], "dsf": 2 },
+    { "name": "track-widget", "url": "/", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.12 },
+    { "name": "how-it-works", "url": "/", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.45 },
+    { "name": "contact", "url": "/", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.88 },
+    { "name": "domestic-express", "url": "/domestic-express", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.1 },
+    { "name": "calculator", "url": "/calculator", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.15 },
+    { "name": "faqs", "url": "/faqs", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.1 },
+    { "name": "home-mobile", "url": "/", "viewport": [396, 836], "dsf": 2 }
+  ]
+}

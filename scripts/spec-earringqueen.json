@@ -1,0 +1,13 @@
+{
+  "base": "http://localhost:8000",
+  "out": "public/projects/earringqueen",
+  "shots": [
+    { "name": "home-desktop", "url": "/", "viewport": [1440, 900], "dsf": 2 },
+    { "name": "filter-bracelet", "url": "/", "viewport": [1440, 900], "dsf": 2, "click": [".filter-list li:nth-child(2)"] },
+    { "name": "filter-price", "url": "/", "viewport": [1440, 900], "dsf": 2, "click": [".filter-header"], "scrollFrac": 0.1 },
+    { "name": "wishlist-drawer", "url": "/", "viewport": [1440, 900], "dsf": 2, "click": [".product-card:first-child .heart-icon", ".wishlist-nav-btn"], "clickWait": 700 },
+    { "name": "story", "url": "/story", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.2 },
+    { "name": "cart", "url": "http://localhost:8001/cart", "viewport": [1440, 900], "dsf": 2, "storage": { "cart": "[{\"name\":\"Snake Chain Bracelet\",\"price\":499,\"quantity\":1,\"image\":\"images/Bracelet/Snake Chain Bracelets.png\"},{\"name\":\"Bow Neckchain\",\"price\":899,\"quantity\":1,\"image\":\"images/Necklace/Bow Neckchain.png\"},{\"name\":\"Tulip Bracelet - Pink\",\"price\":549,\"quantity\":2,\"image\":\"images/Bracelet/Tulip Bracelet - Pink.png\"}]" } },
+    { "name": "home-mobile", "url": "/", "viewport": [396, 836], "dsf": 2 }
+  ]
+}

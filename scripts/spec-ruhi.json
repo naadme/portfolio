@@ -1,0 +1,21 @@
+{
+  "base": "https://www.ruhi-collections.com",
+  "out": "public/projects/ruhi-collections",
+  "shots": [
+    { "name": "home-desktop", "url": "/", "viewport": [1440, 900], "dsf": 2 },
+    { "name": "home-categories", "url": "/", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.24 },
+    { "name": "home-bestsellers", "url": "/", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.42 },
+    { "name": "home-story", "url": "/", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.66 },
+    { "name": "shop-filtered", "url": "/shop?type=coord", "viewport": [1440, 900], "dsf": 2 },
+    { "name": "product-desktop", "url": "/product/embroidery-coord-set-mustard-yellow", "viewport": [1440, 900], "dsf": 2 },
+    { "name": "product-info", "url": "/product/embroidery-coord-set-mustard-yellow", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.45 },
+    { "name": "product-reviews", "url": "/product/embroidery-coord-set-mustard-yellow", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.82 },
+    { "name": "admin-login", "url": "/admin", "viewport": [1440, 900], "dsf": 2 },
+    { "name": "wishlist", "url": "/wishlist", "viewport": [1440, 900], "dsf": 2 },
+    { "name": "size-guide", "url": "/size-guide", "viewport": [1440, 900], "dsf": 2, "scrollFrac": 0.2 },
+    { "name": "home-mobile", "url": "/", "viewport": [396, 836], "dsf": 2 },
+    { "name": "shop-mobile", "url": "/shop", "viewport": [396, 836], "dsf": 2 },
+    { "name": "product-mobile", "url": "/product/embroidery-coord-set-mustard-yellow", "viewport": [396, 836], "dsf": 2 },
+    { "name": "cart-mobile", "url": "/product/embroidery-coord-set-mustard-yellow", "viewport": [396, 836], "dsf": 2, "sweep": false, "steps": [ { "clickText": "^(S|M|L|XL)$", "wait": 800 }, { "clickText": "^Add to cart$", "wait": 2200 }, { "goto": "/cart", "wait": 2600 } ] }
+  ]
+}

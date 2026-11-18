@@ -1,0 +1,5 @@
+/* Glassmorphism: used on the nav, chips, status badges and secondary buttons. */
+.glass{background:var(--glass);-webkit-backdrop-filter:blur(22px) saturate(1.8);backdrop-filter:blur(22px) saturate(1.8);border:1px solid var(--glass-edge);box-shadow:var(--glass-shadow)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.glass{background:var(--glass-strong)}}
+.btn.glass:hover{background:var(--glass-strong);border-color:var(--glass-edge)}
+.badge{position:absolute;left:clamp(12px,2vw,20px);bottom:clamp(12px,2vw,20px);padding:8px 14px;border-radius:999px;font-size:13px;font-weight:500;line-height:1.2;color:var(--fg);background:var(--glass-strong)}

@@ -1,0 +1,15 @@
+/* Tablet and below: no pinning. Each project becomes a stacked, scroll-in composition. */
+@media(max-width:999px){
+.pj{height:auto;padding:0 0 clamp(64px,12vw,112px)}
+.pj-stick{position:static;height:auto;grid-template-columns:1fr;padding:0 var(--pad);gap:36px;opacity:1;transform:none}
+.pj.flip .pj-copy{order:0}.pj-visual{order:-1;padding-bottom:6%}.frame.d,.tilt{width:100%}.frame.m{width:24%;right:-1%}
+.hero{height:100svh}.hero-in{position:relative}
+.about-intro{grid-template-columns:1fr;gap:20px}.about-cols{grid-template-columns:1fr 1fr}
+}
+@media(max-width:860px){
+.stats{grid-template-columns:1fr 1fr}.stats div{padding-left:20px}.stats div:nth-child(odd){border-left:0;padding-left:0}.stats div:nth-child(n+3){border-top:1px solid var(--line)}
+.ruhi ul{grid-template-columns:1fr}.band{border-radius:32px 32px 0 0;margin-top:-32px}.contact{border-radius:32px 32px 0 0}
+.visit{width:100%;justify-content:space-between}.p-links .btn{flex:1}
+.pindex{bottom:calc(14px + env(safe-area-inset-bottom))}.case-nav{grid-template-columns:1fr}.case-nav .next{align-items:flex-start;text-align:left}
+}
+@media(max-width:640px){.about-cols{grid-template-columns:1fr}}
